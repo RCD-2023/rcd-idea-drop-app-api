@@ -14,7 +14,10 @@ const PORT = process.env.PORT || 8000;
 //coonect to mongodb
 connectDB();
 //cors config
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://rcd-idea-drop-app-ui.vercel.app',
+];
 //middleware
 app.use(
   cors({
